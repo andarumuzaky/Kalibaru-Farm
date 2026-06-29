@@ -1,0 +1,17 @@
+# IDEs and OS files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Ignore nested envs and node_modules as backup
+**/node_modules/
+**/.env
+**/.env.local
+**/.next/
+**/build/
+**/dist/
+
+# Project specific files to ignore
+prd_kalibaru.md
+test.js

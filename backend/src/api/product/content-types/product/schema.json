@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "Product"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": { "type": "string", "required": true },
+    "slug": { "type": "uid", "targetField": "title", "required": true },
+    "description": { "type": "richtext" },
+    "price": { "type": "decimal" },
+    "thumbnail": { "type": "media", "multiple": false, "required": true, "allowedTypes": ["images"] },
+    "gallery": { "type": "media", "multiple": true, "allowedTypes": ["images"] },
+    "benefits": { "type": "richtext" },
+    "shippingInfo": { "type": "richtext" },
+    "storageInfo": { "type": "richtext" },
+    "unit": { "type": "string" },
+    "isNew": { "type": "boolean", "default": false },
+    "featureBadge1": { "type": "string" },
+    "featureBadge2": { "type": "string" },
+    "category": { "type": "enumeration", "enum": ["Susu & Olahan", "Sayuran Organik", "Telur & Protein", "Produk Lainnya"] },
+    "isOrganic": { "type": "boolean", "default": false },
+    "isFeatured": { "type": "boolean", "default": false }
+  }
+}

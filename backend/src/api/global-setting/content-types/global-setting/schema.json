@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "global_settings",
+  "info": {
+    "singularName": "global-setting",
+    "pluralName": "global-settings",
+    "displayName": "GlobalSetting"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "farmName": { "type": "string" },
+    "logo": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+    "aboutDescription": { "type": "richtext" },
+    "whatsAppNumber": { "type": "string" },
+    "address": { "type": "text" },
+    "googleMapsURL": { "type": "text" }
+  }
+}
